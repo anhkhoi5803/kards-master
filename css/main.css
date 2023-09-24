@@ -1110,6 +1110,7 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
+	opacity: 0.7;
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
@@ -1122,6 +1123,7 @@ header .logo {
 	margin-right: 50px;
 	margin-top: 25px;
 	position: relative;
+	opacity: 1;
 }
 header .logo a {
 	display: block;
@@ -1135,6 +1137,7 @@ header .logo a {
 	height: 20px;
 	background: url("../images/favicon.ico") no-repeat center;
 	background-size: 64px 64px;
+	opacity: 1;
 }
 
 /**
