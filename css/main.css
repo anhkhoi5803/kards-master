@@ -1048,6 +1048,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	letter-spacing: .4rem;
 }
 
+  #spin {
+	
+  }
+  #spin:after {
+	content:"";
+	animation: spin 5s linear infinite;
+	color:white;
+  }
+  @keyframes spin {
+	0% { content:"Software Developer"}
+	50% { content:"Web Developer"}
+	100% { content:".NET Developer"}
+  }
+
 /**
  * responsive:
  * common styles
