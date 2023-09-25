@@ -1058,8 +1058,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   }
   @keyframes spin {
 	0% { content:"Software Developer"}
-	50% { content:"Web Developer"}
-	100% { content:".NET Developer"}
+	20% { content:"Web Developer"}
+	40% { content:".NET Developer"}
+	80% { content:"Innovator"}
+	100% { content:"Learner"}
+
+
   }
 
 /**
@@ -1111,10 +1115,11 @@ header .top-bar {
 	display: block;
 	background: #000000;
 	opacity: 0.7;
-	min-width: 220px;
+	min-width: 100%;
+	/* min-width: 220px; */
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	/* left: 90px; */
 	top: 0;
 }
 header .logo {
@@ -1122,7 +1127,7 @@ header .logo {
 	margin-left: 20px;
 	margin-right: 50px;
 	margin-top: 25px;
-	position: relative;
+	position: abos;
 	opacity: 1;
 }
 header .logo a {
@@ -1138,6 +1143,7 @@ header .logo a {
 	background: url("../images/favicon.ico") no-repeat center;
 	background-size: 64px 64px;
 	opacity: 1;
+	
 }
 
 /**
@@ -1367,12 +1373,67 @@ header .logo a {
 	font-size: 8.4rem;
 	line-height: 1.071;
 	max-width: 900px;
-	margin-top: 0;
-	margin-bottom: .6rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 	margin-left: auto;
 	margin-right: auto;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
+.intro-content .shadow-txt{
+	/* position: relative; */
+	/* font-size: 10em; */
+	/* letter-spacing:10px; */
+	/* font-family: sans-serif; */
+	/* display:table; */
+	/* margin:40px auto; */
+	cursor:pointer;
+	transition:.6s;
+}
+.intro-content .shadow-txt:before,
+.intro-content .shadow-txt:after {
+  content:attr(data-text);
+  transition:.6s;
+}
+.intro-content .shadow-txt:before {
+  left: 9000;
+  top: 9000;
+  position: absolute;
+  z-index:-100;
+  text-shadow:
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px;
+  -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+          mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+}
+.intro-content .shadow-txt:hover {
+  transform:translate(-20px,-20px);
+  color: #000;
+}  
+.intro-content .shadow-txt:hover:before {
+  text-shadow:
+   1px 1px,
+   2px 2px,
+   3px 3px,
+   4px 4px,
+   5px 5px,
+   6px 6px,
+   7px 7px,
+   8px 8px,
+   9px 9px,
+   10px 10px;
+}
+
+
+
 .intro-content h5 {
 	color: #cc005f;
 	font-family: "poppins-bold", sans-serif;
